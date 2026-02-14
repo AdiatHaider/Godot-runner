@@ -1,7 +1,7 @@
 [gd_scene format=4 uid="uid://ckv5m3b83bial"]
 
 [ext_resource type="Texture2D" uid="uid://36b7hpq531rd" path="res://assets/environment/world_tileset.png" id="1_6e84v"]
-[ext_resource type="Script" uid="uid://gi1epqrexqj8" path="res://scenes/Node2d.cs" id="1_rnjyy"]
+[ext_resource type="Script" uid="uid://gi1epqrexqj8" path="res://scripts/Node2d.cs" id="1_rnjyy"]
 [ext_resource type="PackedScene" uid="uid://bto0kqgbd5moc" path="res://scenes/knight.tscn" id="2_4dvvg"]
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_rnjyy"]
