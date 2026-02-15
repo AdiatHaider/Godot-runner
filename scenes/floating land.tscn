@@ -146,4 +146,4 @@ tile_set = SubResource("TileSet_1lq1x")
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="." unique_id=1652059399]
 position = Vector2(347, 16)
 scale = Vector2(0.9999997, 1.0230092)
-polygon = PackedVector2Array(449, 53, 453, 197, 495, 216, 502.00018, 434.0137, 642.00024, 397.84592, 666, 56)
+polygon = PackedVector2Array(449, 53, 453, 197, 495, 216, 502.00018, 434.0137, 657.00024, 408.59848, 666, 56)

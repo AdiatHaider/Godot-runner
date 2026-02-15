@@ -11,6 +11,7 @@ public partial class Node2d : Node2D
 	public int score=0;
 	public List<PackedScene> Obstacles;
 	public List<CharacterBody2D> ObstaclesMap;
+	Button RestartButton;
 	private Random rand= new Random();
 	PackedScene slime=GD.Load<PackedScene>("res://scenes/slime.tscn"),shroom=GD.Load<PackedScene>("res://scenes/shroom.tscn"),land=GD.Load<PackedScene>("res://scenes/floating land.tscn");
 	Node2D knight;
@@ -18,7 +19,19 @@ public partial class Node2d : Node2D
 	TileMapLayer ground;
 	Area2D hit;
 
-
+	public void RestartGame()
+	{
+		score=0;
+		cam.Position=new Vector2(0,0);
+		knight.Position=new Vector2(0,0);
+		foreach(CharacterBody2D i in ObstaclesMap)
+		{
+			i.QueueFree();
+		}
+		ObstaclesMap.Clear();
+		GameOn=true;
+		ground.Position=new Vector2(0,0);
+	}
 	public override void _Ready()
 	{
 		knight=GetNode<CharacterBody2D>("Knight");
@@ -30,6 +43,8 @@ public partial class Node2d : Node2D
 		Obstacles.Add(shroom);
 		Obstacles.Add(land);
 		GameOn=true;
+		RestartButton=GetNode<Button>("HUD/Restart");
+		RestartButton.Pressed+=RestartGame;
 	}
 	
 	private void SpawnObstacles()

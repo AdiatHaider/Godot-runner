@@ -44,7 +44,7 @@ public partial class CharacterBody2d : CharacterBody2D
 	{
 		if(main.GameOn==false)
 		{
-			Velocity=new Vector2(0,0);
+			Velocity+=new Vector2(0,(float)(delta*Gravity));
 			MoveAndSlide();
 			return;
 		}

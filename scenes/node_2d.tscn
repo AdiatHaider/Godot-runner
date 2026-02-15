@@ -4,7 +4,7 @@
 [ext_resource type="Script" uid="uid://gi1epqrexqj8" path="res://scripts/Node2d.cs" id="1_rnjyy"]
 [ext_resource type="PackedScene" uid="uid://bto0kqgbd5moc" path="res://scenes/knight.tscn" id="2_4dvvg"]
 [ext_resource type="PackedScene" uid="uid://bgnjb30hpgutp" path="res://scenes/HUD.tscn" id="4_4vge2"]
-[ext_resource type="Script" uid="uid://b5ky4kmowh01i" path="res://scenes/Hud.cs" id="5_04qyp"]
+[ext_resource type="Script" uid="uid://b5ky4kmowh01i" path="res://scripts/Hud.cs" id="5_04qyp"]
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_rnjyy"]
 load_path = "res://.godot/imported/platforms.png-a6a3e76be9461a365a234a45016d1224.ctex"
