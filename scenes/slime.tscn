@@ -60,19 +60,20 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_vnioy"]
-size = Vector2(56, 57)
+size = Vector2(56, 62)
 
 [node name="CharacterBody2D" type="CharacterBody2D" unique_id=1193339650]
-position = Vector2(7, 3)
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=2019703805]
-position = Vector2(28.454407, 28.14395)
-scale = Vector2(-2.3712006, 2.3453293)
+position = Vector2(805, 460)
+scale = Vector2(-3.7576609, 4.119997)
 sprite_frames = SubResource("SpriteFrames_0l8pv")
-frame_progress = 0.5040002
+frame_progress = 0.25725392
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=239806514]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=309469476]
-position = Vector2(28, 28.5)
+position = Vector2(808, 478)
 shape = SubResource("RectangleShape2D_vnioy")
+
+[node name="Area2D" type="Area2D" parent="." unique_id=1608151001]
