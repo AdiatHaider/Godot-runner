@@ -263,7 +263,7 @@ data = PackedByteArray("cW9hZgAATd0BAKxEFAAIGAAAAAAAAAAAAAAAAOAAQAD+lWC0SCCA0W8K
 script = ExtResource("1_3i0j8")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=856320315]
-position = Vector2(291.75, 333.87503)
+position = Vector2(-30.25, 344.87503)
 scale = Vector2(4.2968755, 4.3671894)
 sprite_frames = SubResource("SpriteFrames_g2y7m")
 animation = &"Roll"
@@ -271,11 +271,11 @@ frame = 10
 frame_progress = 1.0
 
 [node name="RunCol" type="CollisionShape2D" parent="." unique_id=1586289950]
-position = Vector2(292, 357.5)
+position = Vector2(-30, 368.5)
 shape = SubResource("RectangleShape2D_3i0j8")
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="." unique_id=1898877497]
-position = Vector2(292.75, 364.37503)
+position = Vector2(-29.25, 375.37503)
 shape = SubResource("CircleShape2D_s8y5s")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1449563346]

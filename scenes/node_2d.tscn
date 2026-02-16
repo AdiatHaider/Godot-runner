@@ -639,7 +639,7 @@ tile_map_data = PackedByteArray("AAAVAAkAAAAAAAAAAAAVAAoAAAAAAAEAAAAVAAsAAAAAAAE
 tile_set = SubResource("TileSet_04qyp")
 
 [node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=1864279675]
-position = Vector2(289, 793.9999)
+position = Vector2(289, 792.9999)
 scale = Vector2(0.99999976, 0.99999976)
 physics_material_override = SubResource("PhysicsMaterial_04qyp")
 

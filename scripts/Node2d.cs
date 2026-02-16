@@ -9,6 +9,7 @@ public partial class Node2d : Node2D
 	public const float Speed=400.0f;
 	public bool GameOn=true;
 	public int score=0;
+	public bool ShowStartScreen;
 	public List<PackedScene> Obstacles;
 	public List<CharacterBody2D> ObstaclesMap;
 	Button RestartButton;
@@ -42,9 +43,10 @@ public partial class Node2d : Node2D
 		Obstacles.Add(slime);
 		Obstacles.Add(shroom);
 		Obstacles.Add(land);
-		GameOn=true;
+		GameOn=false;
 		RestartButton=GetNode<Button>("HUD/Restart");
 		RestartButton.Pressed+=RestartGame;
+		ShowStartScreen=true;
 	}
 	
 	private void SpawnObstacles()
@@ -71,12 +73,22 @@ public partial class Node2d : Node2D
 		score=((int)knight.Position.X)/10;
 		if(GameOn==false)
 		{
+			if(ShowStartScreen)
+			{
+				if(Input.IsAnythingPressed())
+				{
+					ShowStartScreen=false;
+					GameOn=true;
+				}
+			}
+			if(Input.IsActionPressed("Start"))
+				RestartGame();
 			return;
 		}
 		Vector2 p=new Vector2(0,0);
 		p.X=(float)(delta*Speed);
 		knight.Position+=p;
-		cam.Position+=p;
+		if(knight.Position.X>=400) cam.Position+=p;
 		if(cam.Position.X>=ground.Position.X+1120)
 		{
 			p=new Vector2(1120,0);
